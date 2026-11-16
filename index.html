@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Cassi">
+<meta name="theme-color" content="#590029">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Cassi</title>
+<style>
+@font-face{font-family:'RocaTwo-Regular';src:url(fonts/RocaTwo-Regular.ttf);font-display:block}
+@font-face{font-family:'RocaTwo-Rg';src:url(fonts/RocaTwo-Regular.ttf);font-display:block}
+@font-face{font-family:'RocaTwo-Bold';src:url(fonts/RocaTwo-Bold.ttf);font-display:block}
+@font-face{font-family:'ProximaNova-Regular';src:url(fonts/ProximaNova-Regular.ttf);font-display:block}
+@font-face{font-family:'ProximaNova-Medium';src:url(fonts/ProximaNova-Medium.ttf);font-display:block}
+@font-face{font-family:'ProximaNova-SemiBold';src:url(fonts/ProximaNova-SemiBold.ttf);font-display:block}
+@font-face{font-family:'ProximaNova-Bold';src:url(fonts/ProximaNova-Bold.ttf);font-display:block}
+html,body{height:100%;margin:0;background:#FDFBFC;overscroll-behavior:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
+#root{display:flex;height:100dvh;width:100%;overflow:hidden;position:relative}
+input,textarea{font-size:16px !important}
+input:focus,textarea:focus{outline:none}
+button,[role=button],[role=tab]{-webkit-user-select:none;user-select:none}
+*{scrollbar-width:none}*::-webkit-scrollbar{display:none}
+.pushed{display:flex;flex-direction:column;flex:1;min-height:0;height:100%;background:#FDFBFC}
+@keyframes push{from{transform:translateX(28%);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:no-preference){.pushed{animation:push .26s cubic-bezier(.2,0,0,1) both}}
+/* On a computer the app sits in a phone-sized frame. On a phone it is the whole screen. */
+@media (min-width:600px){
+  html,body{background:#EDE7EA}
+  body{display:flex;align-items:center;justify-content:center}
+  #root{width:390px;height:min(844px,calc(100dvh - 48px));border-radius:44px;box-shadow:0 0 0 10px #1c1418,0 40px 80px -30px rgba(62,34,85,.5);transform:translateZ(0)}
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="app.js?v=1794847117867"></script>
+</body>
+</html>
